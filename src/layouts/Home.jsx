@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
 import LeftAside from "../components/layout-components/LeftAside";
@@ -18,7 +19,7 @@ const Home = () => {
             </nav>
             <main className="w-11/12 mx-auto grid md:grid-cols-12 my-5">
                 <aside className="col-span-3"><LeftAside></LeftAside></aside>
-                <section className="col-span-6">Main</section>
+                <section className="col-span-6"><Outlet></Outlet></section>
                 <aside className="col-span-3"><RightAside></RightAside></aside>
             </main>
         </div>

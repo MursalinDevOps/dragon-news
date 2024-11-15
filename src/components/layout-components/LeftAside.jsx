@@ -17,7 +17,7 @@ const LeftAside = () => {
             <h2 className="text-xl font-semibold">All category</h2>
             <div className="flex flex-col gap-3 mt-3 text-lg">
                 {
-                    categories.map(category => <NavLink className="btn">{category.category_name}</NavLink>)
+                    categories.map(category => <NavLink to={`/category/${category.category_id}`} className="btn">{category.category_name}</NavLink>)
                 }
             </div>
         </div>
